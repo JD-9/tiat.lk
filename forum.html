@@ -1,0 +1,393 @@
+<!-- NOTE: This is a demo code of how the real world thing looks like, if you would like to make it real, give me a call. However, this code is tested and works 100% without reproducing any errors. Use npm to install all the dependencies before running. You may change anything to your preferences. :) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/c3524181bb.js" crossorigin="anonymous" defer></script>
+    <script src="../javascript/nav.js" defer></script>
+    <script src="../javascript/forum.js" defer></script>
+    <title>TIAT Academy | Homepage</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <!-- Logo and header text -->
+            <a href="landing.html" class="primary-bg-color flex p-2 md:justify-center main-header pattern-randomized">
+                <img class="mb-3 rounded-full animate__animated header-logo"
+                    src="../assets/images/logo/tiat_logo_100px.png" alt="t.i.a.t home">
+                <h1
+                    class="ml-6 mt-10 text-xl md:text-5xl md:mt-7 text-white header-txt animate__animated heading-text-shadow">
+                    TIAT ACADEMY
+                </h1>
+            </a>
+            <hr>
+            <!-- Navigation -->
+            <nav>
+                <div class="p-1 social-bar flex justify-around md:hidden">
+                    <a href="https://www.facebook.com" class="fab fa-facebook fa-2x text-blue-700 m-1"></a>
+                    <a href="https://www.twitter.com" class="fa fa-twitter fa-2x text-blue-400 m-1"></a>
+                    <a href="https://www.linkedin.com" class="fab fa-linkedin-in fa-2x text-blue-900 m-1"></a>
+                    <a href="https://www.youtube.com" class="fab fa-youtube fa-2x text-red-600 m-1"></a>
+                    <button class="text-black hamburger primary-bg-color-shade-1 rounded ml-16 shadow">
+                        <div class="burger-lines"></div>
+                    </button>
+                </div>
+                <ul
+                    class="hidden animate__animated duration-1 secondary-bg-color-shade-1 invisible nav-links bg-tiat-linear-secondary uppercase md:flex justify-evenly md:h-16 relative">
+                    <li class="grid justify-center p-0 nav-btn animate__animated required rounded-sm">
+                        <a href="./courses.html" class="md:p-4 text-lg active:text-pink-600 rounded">Courses</a>
+                        <div
+                            class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 primary-bg-color p-3">
+                            <a href="./courses.html#java" class="p-1 rounded-sm">Java</a>
+                            <a href="./courses.html#flutter" class="p-1 rounded-sm">Flutter</a>
+                            <a href="./courses.html#ml" class="p-1 rounded-sm">Python</a>
+                            <a href="./courses.html#iot" class="p-1 rounded-sm">IoT Basics</a>
+                            <a href="./courses.html#iot-2" class="p-1 rounded-sm">IoT Advanced</a>
+                        </div>
+                    </li>
+                    <li class="flex justify-center rounded-sm p-0 nav-btn animate__animated"><a href="./forum.html"
+                            class="md:p-4 text-lg active:text-pink-600 rounded">TIAT
+                            Forum</a>
+                        <div
+                            class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 ml-9 primary-bg-color p-3">
+                            <a href="./forum.html#sign-in" class="p-1 rounded-sm">Sign In</a>
+                            <a href="./forum.html#help" class="p-1 rounded-sm">Ask for Help</a>
+                            <a href="./forum.html#iot-hardware" class="p-1 rounded-sm">IoT Hardware</a>
+                            <a href="./forum.html#faq" class="p-1 rounded-sm">FAQ</a>
+                        </div>
+                    </li>
+                    <li class="flex justify-center rounded-sm p-0 nav-btn animate__animated"><a href="./about-us.html"
+                            class="active:primary-bg-color md:p-4 text-lg active:text-pink-600 rounded">About
+                            Us</a>
+                    </li>
+                    <li class="flex justify-center p-0 rounded-sm nav-btn animate__animated"><a href="./contact-us.html"
+                            class="md:p-4 text-lg active:text-pink-600 rounded">Contact
+                            Us</a>
+                        <div
+                            class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 mr-4 primary-bg-color p-3">
+                            <a href="./contact-us.html#facebook" class="p-1 rounded-sm">Facebook</a>
+                            <a href="./contact-us.html#twitter" class="p-1 rounded-sm">Twitter</a>
+                            <a href="./contact-us.html#direct" class="p-1 rounded-sm">Email</a>
+                            <a href="./contact-us.html#direct" class="p-1 rounded-sm">Phone</a>
+                            <a href="./contact-us.html#direct" class="p-1 rounded-sm">WhatsApp</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="wrapper wiggle">
+                <section>
+                    <h2 class="text-3xl md:text-4xl text-center pt-5 text-blue-600 pb-0 heading-text-shadow">Welcome
+                        to TIAT Forum</h2>
+                    <div>
+                        <form id="sign-in" class="text-center flex flex-col p-6 justify-center items-center pb-0">
+                            <h3 class="text-2xl md:text-3xl text-center pt-2 pb-1 text-pink-500 heading-text-shadow">
+                                Sign In to Continue
+                            </h3>
+                            <label class="pb-1 paragraph-text-shadow" for="username">Username/Email</label>
+                            <input type="email" placeholder="Ex: johndoe123"
+                                class="w-3/4 md:w-1/4 border-2 border-slate-400 rounded-sm outline-none px-2 focus:border-blue-400"
+                                id="username">
+                            <br>
+                            <label class="pb-1 paragraph-text-shadow" for="password">Password</label>
+                            <input type="password"
+                                class="w-3/4 md:w-1/4 border-2 border-slate-400 rounded-sm outline-none px-2 focus:border-blue-400 mb-3"
+                                id="password">
+                            <a href="#"
+                                class="w-1/4 h-8 md:w-1/6 rounded-md border-2 bg-blue-400 hover:bg-blue-700 hover:text-white mb-6 md:self-center paragraph-text-shadow">Sign
+                                In</a>
+                            <a href="#" class="text-blue-400 paragraph-text-shadow">Forgot password?</a>
+                            <p class="md:self-center md:mb-0 md:pb-0 paragraph-text-shadow">Don't have an account? <a
+                                    href="#" class="text-blue-400 font-semibold">Sign Up</a></p>
+                        </form>
+                    </div>
+                    <p class="text-sm italic text-center pt-1 md:mt-0 md:pt-0 text-gray-500">You must be signed in to
+                        ask for help</p>
+                </section>
+                <br>
+                <section class="ask-for-help" id="help">
+                    <h2 class="text-3xl md:text-4xl text-center pt-5 heading-text-shadow">Ask for Help</h2>
+                    <form>
+                        <h3 class="md:text-lg p-5 underline decoration-blue-600 heading-text-shadow">Fill the form below
+                            and post the
+                            question
+                            on
+                            one of the threads of TIAT forum</h3>
+                        <p class="mx-5 text-sm paragraph-text-shadow">The fields marked with <span
+                                class="text-red-600 font-bold text-lg">*</span>
+                            are
+                            required,
+                            others
+                            are
+                            optional, but
+                            maybe
+                            needed in order to answer your question.</p>
+                        <div class="flex flex-col justify-around lg:mx-8 p-10">
+                            <label for="question" class="py-1 px-2 heading-text-shadow">What's wrong?<span
+                                    class="text-red-600 font-bold text-lg">*</span> </label>
+                            <input id="question" name="question" type="text" placeholder="JDK 8 not working" required
+                                class="outline-none border-2 border-gray-400 focus:border-blue-400 py-1 px-2 rounded-md">
+                            <br>
+                            <label class="heading-text-shadow" for="desc">Describe the problem you're currently
+                                having<span class="text-red-600 font-bold text-lg">*</span></label>
+                            <textarea id="desc" name="desc" rows="4" cols="50" required
+                                placeholder="OpenJDK 8 not working after updating to version 1.8. I updated OpenJDK yesterday and upon restarting my computer, JDK doesn't work. I double checked everything and the environment variables are all OK."
+                                class="outline-1 rounded-md bg-yellow-50 focus:outline-blue-400 py-1 px-2"></textarea>
+                            <br>
+                            <label for="steps" class="heading-text-shadow">Steps to re-produce the problem
+                                (optional)</label>
+                            <textarea name="steps" id="steps" cols="50" rows="4"
+                                placeholder="You need to update OpenJDK 8 to the latest available version in order to reproduce the problem. Then try creating a simple console application or a JavaFX application."
+                                class="outline-1 rounded-md bg-yellow-50 focus:outline-blue-400 py-1 px-2"></textarea>
+                            <br>
+                            <label for="threadselector" class="heading-text-shadow">Select the thread you want to ask
+                                the question<span class="text-lg font-bold text-red-600">*</span> </label>
+                            <select name="threadselector" id="threadselector" required
+                                class="outline-1 bg-orange-100 focus:outline-blue-400 py-1 px-2 rounded-md">
+                                <option value="def" selected="true" disabled class="bg-purple-200">- Select a thread -
+                                </option>
+                                <option value="java" class="bg-green-200">Java related</option>
+                                <option value="flutter" class="bg-purple-200">Flutter related</option>
+                                <option value="ml" class="bg-green-200">Machine learning related</option>
+                                <option value="iot" class="bg-purple-200">IoT related</option>
+                                <option value="other" class="bg-green-200">Other questions</option>
+                                <option value="general" class="bg-purple-200">General programming
+                                </option>
+                            </select>
+                            <button type="submit" class="mt-5"> <a
+                                    class="py-1 px-2 bg-green-400 rounded-md paragraph-text-shadow hover:bg-green-700 hover:text-white"
+                                    href="#">Ask the
+                                    question</a></button>
+                        </div>
+                    </form>
+                </section>
+                <section class="signal" id="iot-hardware">
+                    <div class="py-10">
+                        <h3 class="text-2xl md:text-3xl text-center pt-2 pb-1 lg:pb-5 text-sky-200 heading-text-shadow">
+                            IoT Hardware</h3>
+                        <div class="slideshow-container">
+                            <div class="my-slides fade">
+                                <img src="../assets/images/forum/forum_main_image_slider/arduino.jpg"
+                                    class="slide-images  animate__animated animate__bounceInLeft">
+                                <div
+                                    class="md:text-xl lg:text-2xl slide-text mb-4  animate__animated animate__bounceInLeft text-lime-300 text-lg paragraph-text-shadow">
+                                    Arduino</div>
+                            </div>
+
+                            <div class="my-slides fade">
+                                <img src="../assets/images/forum/forum_main_image_slider/smart-home.jpg"
+                                    class="slide-images animate__animated animate__bounceInLeft">
+                                <div
+                                    class="md:text-xl lg:text-2xl slide-text mb-4 animate__animated animate__bounceInLeft text-lime-300 text-lg paragraph-text-shadow">
+                                    Smart Home Hardware</div>
+                            </div>
+
+                            <div class="my-slides fade">
+                                <img src="../assets/images/forum/forum_main_image_slider/raspberry-pi.jpg"
+                                    class="slide-images animate__animated animate__bounceInLeft">
+                                <div
+                                    class="md:text-xl lg:text-2xl slide-text mb-4 animate__animated animate__bounceInLeft text-lime-300 text-lg paragraph-text-shadow">
+                                    Raspberry Pi</div>
+                            </div>
+
+                            <div class="my-slides fade">
+                                <img src="../assets/images/forum/forum_main_image_slider/iot_for_engineering.jpg"
+                                    class="slide-images animate__animated animate__bounceInLeft">
+                                <div
+                                    class="md:text-xl lg:text-2xl slide-text mb-4 animate__animated animate__bounceInLeft text-lime-300 text-lg paragraph-text-shadow">
+                                    IoT Technologies and Hardware for Engineering</div>
+                            </div>
+
+                            <div class="my-slides fade">
+                                <img src="../assets/images/forum/forum_main_image_slider/iot-business.jpg"
+                                    class="slide-images animate__animated animate__bounceInLeft">
+                                <div
+                                    class="md:text-xl lg:text-2xl slide-text mb-4 animate__animated animate__bounceInLeft text-lime-300 text-lg paragraph-text-shadow">
+                                    IoT Systems Engineering
+                                </div>
+                            </div>
+                            <div style="text-align:center" class="mt-10">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <p
+                            class="p-3 text-gray-300 text-center md:text-left md:text-xl lg:text-2xl py-10 md:py-16 paragraph-text-shadow">
+                            IoT Hardware includes a wide range of devices such as devices for routing, bridges, sensors
+                            etc. These IoT devices manage key tasks and functions such as system activation, security,
+                            action specifications, communication, and detection of support-specific goals and actions.
+
+                            IoT Hardware components can vary from low-power boards; single-board processors like the
+                            Arduino Uno which are basically smaller boards that are plugged into mainboards to improve
+                            and increase its functionality by bringing out specific functions or features (such as GPS,
+                            light and heat sensors, or interactive displays).
+
+                            A programmer specifies a board's input and output, then creates a circuit design to
+                            illustrate the interaction of these inputs and outputs.
+                        </p>
+                        <div class="p-1 flex justify-center"><a href="#"
+                                class="self-center font-semibold text-xl lg:text-2xl text-center py-2 px-10 rounded-md text-pink-500 bg-green-400 hover:bg-green-700 hover:text-pink-300 paragraph-text-shadow">Go
+                                to IoT Hardware Thread</a></div>
+                    </div>
+                </section>
+                <section class="p-3 lg:p-5 faq polka-dots" id="faq">
+                    <h3 class="text-2xl md:text-3xl text-center pt-2 pb-1 lg:pb-5 text-amber-400">FAQ</h3>
+                    <div class="text-center my-10 bg-amber-900 rounded-md py-5 justify-content">
+                        <h4
+                            class="toggle text-blue-200 text-xl lg:text-2xl rounded-md cursor-pointer heading-text-shadow">
+                            How do I
+                            start a
+                            course?<span class="fas fa-plus pl-2 text-sm text-right toggle-icon"></span></h4>
+                        <p
+                            class="text-white md:text-lg lg:text-xl text-left leading-8 h-0 overflow-hidden transition-all duration-1000 faq-para pl-3 paragraph-text-shadow">
+                            You can
+                            start a course 2
+                            ways. First
+                            go to
+                            our
+                            courses page and
+                            choose the course you'd
+                            like to follow, and at the bottom of every course you'll find a 'Enroll Now' button. Click
+                            on it. It'll take you to a page with more details of the course and at the end of the page,
+                            you'll see a payment option. Complete the payment and one of our representatives will
+                            contact you within 24 hours. Otherwise, you can call our call center to get a quotation for
+                            your needs.</p>
+                    </div>
+                    <div class="text-center my-10 bg-amber-900 rounded-md py-5 leading-8">
+                        <h4
+                            class="toggle text-blue-200 text-xl lg:text-2xl rounded-md cursor-pointer heading-text-shadow">
+                            Can I get a refund?<span class="fas fa-plus pl-2 text-sm text-right toggle-icon"></span>
+                        </h4>
+                        <p
+                            class="text-white md:text-lg lg:text-xl text-left leading-8 h-0 overflow-hidden transition-all faq-para pl-3 duration-1000 paragraph-text-shadow">
+                            It is
+                            possible to get a refund within
+                            two
+                            weeks
+                            after starting your course. So, contact our representatives before it's late. If you still
+                            want to get a refund after two weeks, you may contact our representatives to see if that's
+                            possible.</p>
+                    </div>
+                    <div class="text-center my-10 bg-amber-900 rounded-md py-5 leading-8">
+                        <h4
+                            class="toggle text-blue-200 text-xl lg:text-2xl rounded-md cursor-pointer heading-text-shadow">
+                            Can I keep all the recordings of the course?<span
+                                class="fas fa-plus pl-2 text-sm text-right toggle-icon"></span>
+                        </h4>
+                        <p
+                            class="text-white md:text-lg lg:text-xl text-left leading-8 h-0 overflow-hidden transition-all faq-para pl-3 duration-1000 paragraph-text-shadow">
+                            Yes. You can
+                            copy our recordings
+                            folder
+                            provided to your OneDrive, or Google Drive and access them after anytime you want. It's
+                            yours for the lifetime!</p>
+                    </div>
+                    <div class="text-center my-10 bg-amber-900 rounded-md py-5 leading-8">
+                        <h4
+                            class="toggle text-blue-200 text-xl lg:text-2xl rounded-md cursor-pointer heading-text-shadow">
+                            When does the course start?<span
+                                class="fas fa-plus pl-2 text-sm text-right toggle-icon"></span></h4>
+                        <p
+                            class="text-white md:text-lg lg:text-xl text-left leading-8 h-0 overflow-hidden transition-all faq-para pl-3 duration-1000 paragraph-text-shadow">
+                            Different
+                            courses have different
+                            timeframes, so you either need to email or call us to get the time.</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer class="text-center lg:text-left bg-black">
+            <div class="lg:grid lg:grid-flow-col lg:grid-cols-3 p-5 lg:ml-16">
+                <div class="mb-10 text-white">
+                    <h4 class="text-yellow-300 text-sm lg:text-md heading-text-shadow">Useful Links</h4>
+                    <ul>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Setup your
+                                computer for mobile app
+                                development</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Setup your
+                                computer to code C family of
+                                languages</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Setup your
+                                computer for back-end
+                                engineering</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Setup your
+                                computer for web
+                                development</a>
+                        </li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Setup your
+                                computer for IoT
+                                development</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-10 text-white">
+                    <h4 class="text-yellow-300 text-sm lg:text-md heading-text-shadow">Our Services</h4>
+                    <ul>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Software
+                                Development</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Careers</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Networking &
+                                Security</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Cloud
+                                Solutions</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Other
+                                Services</a></li>
+                    </ul>
+                </div>
+                <div class="mb-10 text-white">
+                    <h4 class="text-yellow-300 text-sm lg:text-md heading-text-shadow">Contact Us</h4>
+                    <p class="text-pink-200 text-xs heading-text-shadow">TIAT ACADEMY</p>
+                    <address class="text-emerald-200 text-xs lg:text-sm paragraph-text-shadow">
+                        #139B, Lost Sky,<br>
+                        San Jose, CA 95116<br>
+                    </address>
+                    <div>
+                        <a class="text-red-200 text-xs lg:text-sm" href="mailto:johndoe123@example.site"> <span
+                                class="fas fa-envelope text-xs lg:text-sm paragraph-text-shadow"></span>
+                            info@tiat.lk</a><br>
+                        <a class="text-blue-500 text-xs lg:text-sm paragraph-text-shadow" href="#"> <span
+                                class="fab fa-facebook"></span>
+                            Facebook.com/tiat_academy</a><br>
+                        <a class="text-sky-400 text-xs lg:text-sm paragraph-text-shadow" href="#"> <span
+                                class="fab fa-twitter"></span>
+                            Twitter.com/tiat_academy</a>
+                    </div>
+                </div>
+            </div>
+            <p class="pb-2 text-center bg-black text-blue-500 text-xs lg:text-sm paragraph-text-shadow">Copyright &copy;
+                2022, TIAT Academy
+            </p>
+            <p class="pb-10 text-center bg-black text-gray-300 text-xs paragraph-text-shadow"><span
+                    class="fa fa-code text-green-400 text-xs mr-2">
+                </span> by TIAT Web Development Team</p>
+        </footer>
+    </section>
+</body>
+
+</html>

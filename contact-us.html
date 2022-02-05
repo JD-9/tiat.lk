@@ -1,0 +1,292 @@
+<!-- NOTE: This is a demo code of how the real world thing looks like, if you would like to make it real, give me a call. However, this code is tested and works 100% without reproducing any errors. Use npm to install all the dependencies before running. You may change anything to your preferences. :) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/c3524181bb.js" crossorigin="anonymous" defer></script>
+    <script src="../javascript/nav.js" defer></script>
+    <script async src="https://platform.twitter.com/widgets.js" defer charset="utf-8"></script>
+    <title>TIAT Academy | Homepage</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <!-- Logo and header text -->
+            <a href="landing.html" class="primary-bg-color flex p-2 md:justify-center main-header pattern-randomized">
+                <img class="mb-3 rounded-full animate__animated header-logo"
+                    src="../assets/images/logo/tiat_logo_100px.png" alt="t.i.a.t home">
+                <h1
+                    class="ml-6 mt-10 text-xl md:text-5xl md:mt-7 text-white header-txt animate__animated heading-text-shadow">
+                    TIAT ACADEMY
+                </h1>
+            </a>
+            <hr>
+            <!-- Navigation -->
+            <nav>
+                <div class="p-1 social-bar flex justify-around md:hidden">
+                    <a href="https://www.facebook.com" class="fab fa-facebook fa-2x text-blue-700 m-1"></a>
+                    <a href="https://www.twitter.com" class="fa fa-twitter fa-2x text-blue-400 m-1"></a>
+                    <a href="https://www.linkedin.com" class="fab fa-linkedin-in fa-2x text-blue-900 m-1"></a>
+                    <a href="https://www.youtube.com" class="fab fa-youtube fa-2x text-red-600 m-1"></a>
+                    <button class="text-black hamburger primary-bg-color-shade-1 rounded ml-16 shadow">
+                        <div class="burger-lines"></div>
+                    </button>
+                </div>
+                <ul
+                    class="hidden animate__animated duration-1 secondary-bg-color-shade-1 invisible nav-links bg-tiat-linear-secondary uppercase md:flex justify-evenly md:h-16 relative">
+                    <li class="grid justify-center p-0 nav-btn animate__animated required rounded-sm">
+                        <a href="./courses.html" class="md:p-4 text-lg active:text-pink-600 rounded">Courses</a>
+                        <div
+                            class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 primary-bg-color p-3">
+                            <a href="./courses.html#java" class="p-1 rounded-sm">Java</a>
+                            <a href="./courses.html#flutter" class="p-1 rounded-sm">Flutter</a>
+                            <a href="./courses.html#ml" class="p-1 rounded-sm">Python</a>
+                            <a href="./courses.html#iot" class="p-1 rounded-sm">IoT Basics</a>
+                            <a href="./courses.html#iot-2" class="p-1 rounded-sm">IoT Advanced</a>
+                        </div>
+                    </li>
+                    <li class="flex justify-center rounded-sm p-0 nav-btn animate__animated"><a href="./forum.html"
+                            class="md:p-4 text-lg active:text-pink-600 rounded">TIAT
+                            Forum</a>
+                        <div
+                            class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 ml-9 primary-bg-color p-3">
+                            <a href="./forum.html#sign-in" class="p-1 rounded-sm">Sign In</a>
+                            <a href="./forum.html#help" class="p-1 rounded-sm">Ask for Help</a>
+                            <a href="./forum.html#iot-hardware" class="p-1 rounded-sm">IoT Hardware</a>
+                            <a href="./forum.html#faq" class="p-1 rounded-sm">FAQ</a>
+                        </div>
+                    </li>
+                    <li class="flex justify-center rounded-sm p-0 nav-btn animate__animated"><a href="./about-us.html"
+                            class="active:primary-bg-color md:p-4 text-lg active:text-pink-600 rounded">About
+                            Us</a>
+                    </li>
+                    <li class="flex justify-center p-0 rounded-sm nav-btn animate__animated"><a href="./contact-us.html"
+                            class="md:p-4 text-lg active:text-pink-600 rounded">Contact
+                            Us</a>
+                        <div
+                            class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 mr-4 primary-bg-color p-3">
+                            <a href="./contact-us.html#facebook" class="p-1 rounded-sm">Facebook</a>
+                            <a href="./contact-us.html#twitter" class="p-1 rounded-sm">Twitter</a>
+                            <a href="./contact-us.html#direct" class="p-1 rounded-sm">Email</a>
+                            <a href="./contact-us.html#direct" class="p-1 rounded-sm">Phone</a>
+                            <a href="./contact-us.html#direct" class="p-1 rounded-sm">WhatsApp</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="facebook px-10">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-blue-800 pt-10 heading-text-shadow"><span
+                        class="fab fa-facebook"></span> Facebook</h2>
+                <p class="text-md md:text-lg lg:text-xl text-center pb-10 paragraph-text-shadow">You can easily contact
+                    us on <a href="#" class="text-blue-800 hover:cursor-pointer">Facebook</a></p>
+                <p class="text-md md:text-lg lg:text-xl text-center pb-0 paragraph-text-shadow">
+                    Our
+                    Latest Facebook
+                    Posts</p>
+                <div
+                    class="md:flex md:flex-col lg:flex-row md:justify-center py-0 px-1 md:px-5 md:items-center md:align-middle">
+                    <iframe
+                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fposts%2F10161175296006729&show_text=true&width=500"
+                        style="border:1px solid gray;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        class="fb-embed rounded-md md:mx-10 my-8 md:w-3/4"></iframe>
+                    <iframe
+                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fposts%2F10161064218376729&show_text=true&width=500"
+                        style="border:1px solid gray;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        class="fb-embed rounded-md md:mx-10 my-8 md:w-3/4"></iframe>
+                    <iframe
+                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fposts%2F10160746121201729&show_text=true&width=500"
+                        style="border:1px solid gray;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        class="fb-embed rounded-md md:mx-10 my-8 md:w-3/4"></iframe>
+                    <iframe
+                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fposts%2F10160657204661729&show_text=true&width=500"
+                        style="border:1px solid grey;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        class="fb-embed rounded-md md:mx-10 my-8 md:w-3/4"></iframe>
+                </div>
+            </section>
+            <section class="twitter" id="twitter">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-sky-500 heading-text-shadow"> <span
+                        class="fab fa-twitter"></span> Twitter</h2>
+                <p class="text-md md:text-lg lg:text-xl text-center pb-10 paragraph-text-shadow">DM or Tweet to us on <a
+                        href="#" class="text-sky-500 hover:cursor-pointer">Twitter</a></p>
+                <p class="text-md md:text-lg lg:text-xl text-center pb-0 paragraph-text-shadow">Our Latest Tweets</p>
+                <div class="md:flex md:flex-col lg:justify-center lg:py-1 px-2 pt-0">
+                    <div class="self-center tweet-embed md:py-8 lg:py-3 lg:flex justify-center pt-0">
+                        <blockquote class="twitter-tweet" data-height="400" data-theme="dark">
+                            <p lang="en" dir="ltr">that's a wrap on another totally normal year</p>&mdash; Twitter
+                            (@Twitter) <a
+                                href="https://twitter.com/Twitter/status/1476946953518948358?ref_src=twsrc%5Etfw">December
+                                31, 2021</a>
+                        </blockquote>
+                    </div>
+                    <div class="self-center tweet-embed md:py-8 lg:py-3 lg:flex justify-center">
+                        <blockquote class="twitter-tweet" data-theme="dark">
+                            <p lang="en" dir="ltr">Twitter is a book you&#39;ll never finish</p>&mdash; Twitter
+                            (@Twitter)
+                            <a href="https://twitter.com/Twitter/status/1470798200152158210?ref_src=twsrc%5Etfw">December
+                                14, 2021</a>
+                        </blockquote>
+                    </div>
+                    <div class="self-center tweet-embed md:py-8 lg:py-3 lg:flex justify-center">
+                        <blockquote class="twitter-tweet" data-theme="dark">
+                            <p lang="en" dir="ltr">cheers to all the Tweets that made it to IG this year</p>&mdash;
+                            Twitter
+                            (@Twitter) <a
+                                href="https://twitter.com/Twitter/status/1466443318003384325?ref_src=twsrc%5Etfw">December
+                                2, 2021</a>
+                        </blockquote>
+                    </div>
+                    <div class="self-center tweet-embed md:py-8 lg:py-3 lg:flex justify-center">
+                        <blockquote class="twitter-tweet" data-theme="dark">
+                            <p lang="en" dir="ltr">BIG NEWS lol jk still Twitter</p>&mdash; Twitter (@Twitter) <a
+                                href="https://twitter.com/Twitter/status/1453847172794003473?ref_src=twsrc%5Etfw">October
+                                28, 2021</a>
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+            <section class="youtube" id="youtube">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl text-red-600 text-center heading-text-shadow"> <span
+                        class="fab fa-youtube"></span> YouTube</h2>
+                <p class="text-md md:text-lg lg:text-xl text-center pb-10 paragraph-text-shadow">Subscribe to our <a
+                        class="text-red-600 hover:cursor-pointer" href="#">YouTube</a> channel for free tutorials!</p>
+                <p class="text-md md:text-lg lg:text-xl text-center pb-0 paragraph-text-shadow">Our Latest Uploads</p>
+                <div class="flex flex-wrap flex-col justify-center items-center px-2">
+                    <iframe class="my-5 rounded-md youtube-embed" src="https://www.youtube.com/embed/mxHoPYFsTuk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe class="my-5 rounded-md youtube-embed" src="https://www.youtube.com/embed/CkcvVZZEsJE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe class="my-5 rounded-md youtube-embed" src="https://www.youtube.com/embed/w7ejDZ8SWv8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe class="my-5 rounded-md youtube-embed" src="https://www.youtube.com/embed/rfscVS0vtbw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="direct-contact md:px-12 md:grid md:grid-cols-3" id="direct">
+                <div class="my-5">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl text-green-400 text-center heading-text-shadow"> <span
+                            class="fab fa-whatsapp-square"></span> WhatsApp</h2>
+                    <p class="text-md text-center md:text-lg lg:text-xl paragraph-text-shadow">+94 77 155 3456</p>
+                </div>
+                <div class="my-5">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl text-blue-500 text-center heading-text-shadow"> <span
+                            class="fas fa-phone-square-alt"></span> Call Us</h2>
+                    <p class="text-md text-center md:text-lg lg:text-xl paragraph-text-shadow">+94 37 222 2413</p>
+                </div>
+                <div class="my-5 flex justify-center flex-col">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl text-red-500 text-center heading-text-shadow"> <span
+                            class="far fa-envelope"></span> Email Us</h2>
+                    <a href="mailto:johndoe123@example.site"
+                        class="text-md text-center md:text-lg lg:text-xl paragraph-text-shadow">info@tiat.lk</a>
+                </div>
+            </section>
+        </main>
+        <footer class="text-center lg:text-left bg-black">
+            <div class="lg:grid lg:grid-flow-col lg:grid-cols-3 p-5 lg:ml-16">
+                <div class="mb-10 text-white">
+                    <h4 class="text-yellow-300 text-sm lg:text-md heading-text-shadow">Useful Links</h4>
+                    <ul>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Setup your
+                                computer for mobile app
+                                development</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Setup your
+                                computer to code C family of
+                                languages</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Setup your
+                                computer for back-end
+                                engineering</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Setup your
+                                computer for web
+                                development</a>
+                        </li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Setup your
+                                computer for IoT
+                                development</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-10 text-white">
+                    <h4 class="text-yellow-300 text-sm lg:text-md heading-text-shadow">Our Services</h4>
+                    <ul>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Software
+                                Development</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Careers</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Networking &
+                                Security</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Cloud
+                                Solutions</a></li>
+                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
+                                href="#">Other
+                                Services</a></li>
+                    </ul>
+                </div>
+                <div class="mb-10 text-white">
+                    <h4 class="text-yellow-300 text-sm lg:text-md heading-text-shadow">Contact Us</h4>
+                    <p class="text-pink-200 text-xs heading-text-shadow">TIAT ACADEMY</p>
+                    <address class="text-emerald-200 text-xs lg:text-sm paragraph-text-shadow">
+                        #139B, Lost Sky,<br>
+                        San Jose, CA 95116<br>
+                    </address>
+                    <div>
+                        <a class="text-red-200 text-xs lg:text-sm paragraph-text-shadow"
+                            href="mailto:johndoe123@example.site"> <span
+                                class="fas fa-envelope text-xs lg:text-sm"></span>
+                            info@tiat.lk</a><br>
+                        <a class="text-blue-500 text-xs lg:text-sm paragraph-text-shadow" href="#"> <span
+                                class="fab fa-facebook"></span>
+                            Facebook.com/tiat_academy</a><br>
+                        <a class="text-sky-400 text-xs lg:text-sm paragraph-text-shadow" href="#"> <span
+                                class="fab fa-twitter"></span>
+                            Twitter.com/tiat_academy</a>
+                    </div>
+                </div>
+            </div>
+            <p class="pb-2 text-center bg-black text-blue-500 text-xs lg:text-sm paragraph-text-shadow">Copyright &copy;
+                2022, TIAT Academy
+            </p>
+            <p class="pb-10 text-center bg-black text-gray-300 text-xs paragraph-text-shadow"><span
+                    class="fa fa-code text-green-400 text-xs mr-2">
+                </span> by TIAT Web Development Team</p>
+        </footer>
+    </section>
+</body>
+
+</html>
