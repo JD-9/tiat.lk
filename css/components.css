@@ -1,0 +1,316 @@
+/* Since this project is entirely based on Tailwind CSS, only a little bit of custom styles are needed. Hence, the custom styles for all the pages will be on this single CSS file (except graphics), which is always compiled by Tailwind to a main CSS file. */
+
+/* Import patterns */
+@import url(graphics.css);
+
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colors */
+.primary-bg-color {
+    background-color: #4361EE;
+}
+
+.primary-bg-color-shade-1 {
+    background-color: #8FA2F5;
+}
+
+.secondary-bg-color {
+    background-color: #F72585;
+}
+
+.secondary-bg-color-shade-1 {
+    background-color: #FB9DC7;
+}
+
+.alt-bg-color {
+    background-color: #3A0CA3;
+}
+
+.alt-bg-color-shade-1 {
+    background-color: #AC3CF6;
+}
+
+.alt-bg-color-shade-2 {
+    background-color: #480674;
+}
+
+.alt-bg-color-2 {
+    background-color: #4CC9F0;
+}
+
+.alt-txt-color {
+    color: #7209B7;
+}
+
+.alt-txt-color-2 {
+    color:orange;
+}
+
+.alt-txt-color-3 {
+    color: #F72585;
+}
+
+.alt-txt-color-4 {
+    color: #4361EE;
+}
+
+.alt-txt-color-5 {
+    color: #8FA2F5;
+}
+
+/* Header */
+header {
+    display: grid;
+    flex-direction: column;
+    padding: 0;
+}
+    
+h1 {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Social bar */
+.social-bar {
+    background-color: #EEE;
+    border: 1px solid gray;
+}
+
+/* Fonts */
+ul {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* 3-line navigation */
+.hamburger {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.burger-lines {
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.burger-lines::before, .burger-lines::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+    margin-left: -15px;  
+}
+
+.burger-lines::before {
+    transform: translateY(-15px);
+}
+
+.burger-lines::after {
+    transform: translateY(15px);
+}
+
+.hamburger.open .burger-lines {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.hamburger.open .burger-lines::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.hamburger.open .burger-lines::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* Mobile navigation */
+@media screen and (max-width: 480px) {
+    .nav-links {
+        background-color: #a1b5ff;
+    }
+
+    .nav-btn>a {
+        background-color: #dbfff3;
+        color: black;
+        text-shadow: 1px 1px gray;
+        padding-inline: 2rem;
+        padding-block: .2rem;
+        margin-block: 1rem;
+    }
+}
+
+/* Medium/large screen navigation */
+@media screen and (min-width: 768px) {
+    .nav-btn:hover .dropdown-content {
+        display: grid;
+        background-color: #baffe8;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #AC3CF6;
+        color: white;
+    }
+
+    .dropdown-content a:active {
+        color: orange;
+        text-decoration: none;
+        background-color: #480674;
+    }
+
+    .nav-links>li>a:hover {
+        background-color: #FDD8E9;
+    }
+
+    .nav-links>li>a:active {
+        background-color: #3A0CA3;
+    }
+}
+
+/* Image and text sliders */
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: 0;
+  }
+  
+  /* Caption text */
+  .slide-text {
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .slide-images {
+    object-fit: contain;
+    width: 100vw;
+    height: 75vh;
+}
+
+.testimonial {
+    height: 400px;
+
+}
+
+@media screen and (max-width: 480px) {
+    .slide-images {
+        height: 40vh;
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial {
+        height: 35vh;
+        width: 95vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .testimonial {
+        height: 20vh;
+        width: 95vw;
+    }
+}
+
+  /* The dots/bullets */
+  .dot, .dots-2 {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .dot-alt {
+      height: 15px;
+      width:15px;
+      margin: 0 2px;
+      background-color: #000000;
+      border-radius: 20%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/* Custom animations */
+.duration-1 {
+    animation-duration: .5s;
+}
+
+/* Hide horizontal scrollbars caused by graphics and animations */
+body {
+    overflow-x: hidden;
+}
+
+/* Embedded posts on social media */
+
+.fb-embed {
+    height: 80vh;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .tweet-embed {
+        width: 75%;
+    }
+
+    .youtube-embed {
+        width: 90vw;
+        height: 55vh;
+    }
+}
+
+/* Custom seperator */
+.seperator {
+    border-top: 2px solid magenta;
+    opacity: .3;
+}
+
+/* Text shadow */
+.heading-text-shadow {
+    text-shadow: 0px 5px 5px #A1A1A1;
+}
+
+.paragraph-text-shadow {
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 0px 2px 2px rgba(206,206,206,0.5);
+}
