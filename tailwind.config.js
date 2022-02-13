@@ -2,7 +2,7 @@ module.exports = {
   purge: {
     node: 'layers',
     content: [
-      "./pages/**/*.{html,js}",
+      "./*.{html,js}",
       "./javascript/**/*.{html,js}"
     ],
   },

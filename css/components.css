@@ -1,64 +1,89 @@
-/* Since this project is entirely based on Tailwind CSS, only a little bit of custom styles are needed. Hence, the custom styles for all the pages will be on this single CSS file (except graphics), which is always compiled by Tailwind to a main CSS file. */
-
-/* Import patterns */
 @import url(graphics.css);
-
-/* Import Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Since this project is entirely based on Tailwind CSS, only a little bit of custom styles are needed. Hence, the custom styles for all the pages will be on this single CSS file (except graphics), which is always compiled by Tailwind to a main CSS file. */
+
 /* Colors */
-.primary-bg-color {
-    background-color: #4361EE;
+:root {
+    --primary-bg-color: #161b22;
+    --secondary-bg-color: #2e33bf;
+    --secondary-bg-color-dark: #0d0f45;
+    --alt-bg-color: #2e9cca;
+    --alt-bg-color-dark: #0e5c7d;
+    --alt-bg-color-2: #4d4f82;
+    --alt-bg-color-3: #aaabb8;
+    --alt-bg-color-4: #BBE1FA;
+    --primary-text-color: #fff;
+    --secondary-text-color: #BBE1FA;
+    --alt-text-color: #5156e8;
+    --alt-text-color-2: #bababa;
+    --alt-text-color-3: #ffa1a1;
+    --alt-text-color-4: #4dbceb;
+    --primary-button-color: #2f7d23;
+    --secondary-button-color: #9c471f;
+    --disabled-button-color: #6b6b6b;
 }
 
-.primary-bg-color-shade-1 {
-    background-color: #8FA2F5;
+.bg-color-1 {
+    background-color: var(--primary-bg-color);
 }
 
-.secondary-bg-color {
-    background-color: #F72585;
+.bg-color-2 {
+    background-color: var(--secondary-bg-color);
 }
 
-.secondary-bg-color-shade-1 {
-    background-color: #FB9DC7;
+.bg-color-2-dark {
+    background-color: var(--secondary-bg-color-dark);
 }
 
-.alt-bg-color {
-    background-color: #3A0CA3;
+.bg-color-3 {
+    background-color: var(--alt-bg-color);
 }
 
-.alt-bg-color-shade-1 {
-    background-color: #AC3CF6;
+.alt-bg-color{
+    background-color: var(--alt-bg-color);
 }
 
-.alt-bg-color-shade-2 {
-    background-color: #480674;
+.alt-bg-color-dark {
+    background-color: var(--alt-bg-color-dark);
 }
 
 .alt-bg-color-2 {
-    background-color: #4CC9F0;
+    background-color: var(--alt-bg-color-2);
 }
 
-.alt-txt-color {
-    color: #7209B7;
+.alt-bg-color-3 {
+    background-color: var(--alt-bg-color-3);
 }
 
-.alt-txt-color-2 {
-    color:orange;
+.alt-bg-color-4 {
+    background-color: var(--alt-bg-color-4);
 }
 
-.alt-txt-color-3 {
-    color: #F72585;
+.primary-text-color {
+    color: var(--primary-text-color);
 }
 
-.alt-txt-color-4 {
-    color: #4361EE;
+.secondary-text-color {
+    color: var(--secondary-text-color);
 }
 
-.alt-txt-color-5 {
-    color: #8FA2F5;
+.alt-text-color {
+    color: var(--alt-text-color);
+}
+
+.alt-text-color-2 {
+    color: var(--alt-text-color-2);
+}
+
+.alt-text-color-3 {
+    color: var(--alt-text-color-3);
+}
+
+.alt-text-color-4 {
+    color: var(--alt-text-color-4);
 }
 
 /* Header */
@@ -74,8 +99,7 @@ h1 {
 
 /* Social bar */
 .social-bar {
-    background-color: #EEE;
-    border: 1px solid gray;
+    background-color: var(--alt-bg-color-3);
 }
 
 /* Fonts */
@@ -90,16 +114,16 @@ ul {
     justify-content: center;
     align-items: center;
     width: 50px;
-    height: 50px;
+    height: 45px;
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
 
 .burger-lines {
-    width: 30px;
-    height: 3px;
-    background: #000000;
-    border-radius: 3px;
+    width: 1.8rem;
+    height: 2px;
+    background: white;
+    border-radius: 1px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;
 }
@@ -107,13 +131,13 @@ ul {
 .burger-lines::before, .burger-lines::after {
     content: '';
     position: absolute;
-    width: 30px;
-    height: 3px;
-    background: #000000;
+    width: 1.8rem;
+    height: 2px;
+    background: white;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-    border-radius: 3px;
+    border-radius: 1px;
     transition: all .5s ease-in-out;
-    margin-left: -15px;  
+    margin-left: -14px;
 }
 
 .burger-lines::before {
@@ -140,17 +164,15 @@ ul {
 
 /* Mobile navigation */
 @media screen and (max-width: 480px) {
-    .nav-links {
-        background-color: #a1b5ff;
+    .nav-btn {
+        background-color: var(--secondary-bg-color);
+        padding-inline: 2rem;
+        padding-block: .5rem;
     }
 
-    .nav-btn>a {
-        background-color: #dbfff3;
-        color: black;
-        text-shadow: 1px 1px gray;
-        padding-inline: 2rem;
-        padding-block: .2rem;
-        margin-block: 1rem;
+    .nav-btn:hover {
+        text-decoration: underline 1px white;
+        text-underline-position: under;
     }
 }
 
@@ -158,26 +180,29 @@ ul {
 @media screen and (min-width: 768px) {
     .nav-btn:hover .dropdown-content {
         display: grid;
-        background-color: #baffe8;
+        background-color: var(--alt-bg-color);
     }
 
     .dropdown-content a:hover {
-        background-color: #AC3CF6;
+        background-color: var(--secondary-bg-color);
         color: white;
     }
 
     .dropdown-content a:active {
-        color: orange;
+        color: var(--primary-text-color);
         text-decoration: none;
-        background-color: #480674;
+        background-color: var(--alt-bg-color-dark);
+        text-decoration: underline 2px var(--primary-text-color);
+        text-underline-position: under;
     }
 
     .nav-links>li>a:hover {
-        background-color: #FDD8E9;
+        text-decoration: underline 2px white;
+        text-underline-position: under;
     }
 
     .nav-links>li>a:active {
-        background-color: #3A0CA3;
+        background-color: var(--primary-bg-color);
     }
 }
 
@@ -234,7 +259,7 @@ ul {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: var(--secondary-bg-color);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -251,7 +276,7 @@ ul {
   }
   
   .active {
-    background-color: #717171;
+    background-color: var(--alt-bg-color);
   }
   
   /* Fading animation */
@@ -300,10 +325,10 @@ body {
     }
 }
 
-/* Custom seperator */
-.seperator {
-    border-top: 2px solid magenta;
-    opacity: .3;
+/* Custom hr */
+.custom-hr {
+    border-color: var(--alt-bg-color);
+    border-width: 2px;
 }
 
 /* Text shadow */
@@ -313,4 +338,14 @@ body {
 
 .paragraph-text-shadow {
     text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 0px 2px 2px rgba(206,206,206,0.5);
+}
+
+/* Links */
+.link-text {
+    color: var(--alt-text-color-3);
+    text-decoration: none;
+}
+
+.link-text:active {
+    color: var(--alt-text-color-2);
 }

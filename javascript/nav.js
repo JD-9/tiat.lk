@@ -24,12 +24,14 @@ mainHeader.addEventListener('click', () => {
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
     if (!menuOpen) {
-        menuBtn.classList.add('secondary-bg-color', 'open');
+        menuBtn.classList.remove('bg-color-2');
+        menuBtn.classList.add('bg-color-1', 'open');
         navLinks.classList.remove('invisible', 'hidden', 'animate__fadeOutRight');
         navLinks.classList.add('animate__fadeInRight');
         menuOpen = true;
     } else {
-        menuBtn.classList.remove('secondary-bg-color', 'open');
+        menuBtn.classList.remove('bg-color-1', 'open');
+        menuBtn.classList.add('bg-color-2');
         navLinks.classList.remove('animate__fadeInRight');
         navLinks.classList.add('animate__fadeOutRight');
         setTimeout(function () {
