@@ -21,6 +21,7 @@
     --alt-text-color-2: #bababa;
     --alt-text-color-3: #ffa1a1;
     --alt-text-color-4: #4dbceb;
+    --alt-text-color-5: #2f7d23;
     --primary-button-color: #2f7d23;
     --secondary-button-color: #9c471f;
     --disabled-button-color: #6b6b6b;
@@ -84,6 +85,26 @@
 
 .alt-text-color-4 {
     color: var(--alt-text-color-4);
+}
+
+.alt-text-color-5 {
+    color: var(--alt-text-color-5);
+}
+
+.btn-color-1 {
+    background-color: var(--primary-button-color);
+}
+
+.btn-color-1:active {
+    background-color: #01400f;
+}
+
+.btn-color-2 {
+    background-color: var(--secondary-button-color);
+}
+
+.btn-color-disabled {
+    background-color: var(--disabled-button-color);
 }
 
 /* Header */
@@ -310,8 +331,10 @@ body {
 /* Embedded posts on social media */
 
 .fb-embed {
-    height: 80vh;
+    height: 75vh;
     width: 100%;
+    border: none;
+    outline: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -348,4 +371,14 @@ body {
 
 .link-text:active {
     color: var(--alt-text-color-2);
+}
+
+.alt-link-text {
+    color: var(--alt-text-color-4);
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.alt-link-text:active {
+    color: var(--alt-text-color-3);
 }

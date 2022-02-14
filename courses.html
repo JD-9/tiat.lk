@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./assets/images/logo/tiat_logo_100px.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -23,32 +24,31 @@
     <section>
         <header>
             <!-- Logo and header text -->
-            <a href="index.html" class="primary-bg-color flex p-2 md:justify-center main-header pattern-randomized">
+            <a href="index.html" class="bg-color-1 flex p-2 md:justify-center main-header">
                 <img class="mb-3 rounded-full animate__animated header-logo"
                     src="./assets/images/logo/tiat_logo_100px.png" alt="t.i.a.t home">
                 <h1
-                    class="ml-6 mt-10 text-xl md:text-5xl md:mt-7 text-white header-txt animate__animated heading-text-shadow">
+                    class="ml-6 mt-10 text-xl md:text-5xl md:mt-7 font-extrabold alt-text-color-4 header-txt animate__animated heading-text-shadow">
                     TIAT ACADEMY
                 </h1>
             </a>
-            <hr>
             <!-- Navigation -->
             <nav>
-                <div class="p-1 social-bar flex justify-around md:hidden">
+                <div class="p-1 social-bar flex justify-around md:hidden mx-0">
                     <a href="https://www.facebook.com" class="fab fa-facebook fa-2x text-blue-700 m-1"></a>
                     <a href="https://www.twitter.com" class="fa fa-twitter fa-2x text-blue-400 m-1"></a>
                     <a href="https://www.linkedin.com" class="fab fa-linkedin-in fa-2x text-blue-900 m-1"></a>
                     <a href="https://www.youtube.com" class="fab fa-youtube fa-2x text-red-600 m-1"></a>
-                    <button class="text-black hamburger primary-bg-color-shade-1 rounded ml-16 shadow">
+                    <button class="text-black hamburger bg-color-2 rounded ml-16 shadow">
                         <div class="burger-lines"></div>
                     </button>
                 </div>
                 <ul
-                    class="hidden animate__animated duration-1 secondary-bg-color-shade-1 invisible nav-links bg-tiat-linear-secondary uppercase md:flex justify-evenly md:h-16 relative">
+                    class="hidden animate__animated duration-1 text-gray-50 font-semibold mx-0 bg-color-2 invisible nav-links uppercase md:flex justify-evenly md:h-16 relative">
                     <li class="grid justify-center p-0 nav-btn animate__animated required rounded-sm">
-                        <a href="courses.html" class="md:p-4 text-lg active:text-pink-600 rounded">Courses</a>
+                        <a href="courses.html" class="md:p-4 text-lg rounded">Courses</a>
                         <div
-                            class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 primary-bg-color p-3">
+                            class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 alt-bg-color p-3">
                             <a href="courses.html#java" class="p-1 rounded-sm">Java</a>
                             <a href="courses.html#flutter" class="p-1 rounded-sm">Flutter</a>
                             <a href="courses.html#ml" class="p-1 rounded-sm">Python</a>
@@ -57,7 +57,7 @@
                         </div>
                     </li>
                     <li class="flex justify-center rounded-sm p-0 nav-btn animate__animated"><a href="forum.html"
-                            class="md:p-4 text-lg active:text-pink-600 rounded">TIAT
+                            class="md:p-4 text-lg rounded">TIAT
                             Forum</a>
                         <div
                             class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 ml-9 primary-bg-color p-3">
@@ -68,11 +68,11 @@
                         </div>
                     </li>
                     <li class="flex justify-center rounded-sm p-0 nav-btn animate__animated"><a href="about-us.html"
-                            class="active:primary-bg-color md:p-4 text-lg active:text-pink-600 rounded">About
+                            class="active:primary-bg-color md:p-4 text-lg rounded">About
                             Us</a>
                     </li>
                     <li class="flex justify-center p-0 rounded-sm nav-btn animate__animated"><a href="contact-us.html"
-                            class="md:p-4 text-lg active:text-pink-600 rounded">Contact
+                            class="md:p-4 text-lg rounded">Contact
                             Us</a>
                         <div
                             class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 mr-4 primary-bg-color p-3">
@@ -88,16 +88,14 @@
         </header>
         <main>
             <section id="java"
-                class="text-center p-5 envelope flex flex-col items-center pb-10 shadow-inner shadow-blue-500">
-                <h2
-                    class="text-2xl md:text-3xl mb-8 bg-pink-50 lg:mb-11 alt-txt-color-4 shadow-md shadow-blue-500 p-3 rounded-md heading-text-shadow">
+                class="text-center p-5 bg-color-1 flex flex-col items-center pb-10 shadow-inner shadow-blue-500">
+                <h2 class="mb-8 mt-10 md:text-5xl text-3xl text-center alt-text-color font-extrabold">
                     Java
                     Programming
                 </h2>
                 <img src="./assets/images/courses_page_images/java_logo.jpg" alt="Java"
                     class="rounded-md mb-5 lg:mb-10 lg:w-3/6 md:w-2/3">
-                <p
-                    class="text-md md:text-lg lg:text-xl text-gray-700 lg:text-left px-1 md:px-8 lg:px-20 paragraph-text-shadow">
+                <p class="text-md md:text-lg lg:text-xl primary-text-color lg:text-left px-1 md:px-8 lg:px-20">
                     Java is a
                     high-level,
                     class-based,
@@ -126,22 +124,20 @@
                     is the default JVM for almost all Linux distributions.</p>
                 <div class="btn-wrapper flex flex-row mt-5">
                     <a href="#"
-                        class="bg-blue-400 p-2 rounded-md m-2 md:mr-10 hover:bg-blue-600 active:bg-blue-900 active:text-white cursor-pointer shadow-md shadow-blue-600 font-bold">Enroll
+                        class="btn-color-1 p-2 rounded-md m-2 md:mr-10 cursor-pointer shadow-md secondary-text-color font-bold">Enroll
                         Now</a>
                     <a href="#"
-                        class="bg-blue-400 p-2 rounded-md m-2 md:ml-10 hover:bg-blue-600 active:bg-blue-900 active:text-white cursor-pointer shadow-md shadow-blue-600 font-bold">Learn
+                        class="btn-color-1 p-2 rounded-md m-2 md:ml-10 cursor-pointer shadow-md secondary-text-color font-bold">Learn
                         More</a>
                 </div>
             </section>
             <section id="flutter"
-                class="text-center p-5 envelope flex flex-col items-center shadow-inner shadow-blue-500">
-                <h2
-                    class="text-2xl md:text-3xl bg-pink-50 mb-8 lg:mb-11 alt-txt-color-4 shadow-md shadow-blue-500 heading-text-shadow p-3 rounded-md">
+                class="text-center p-5 bg-color-1 flex flex-col items-center pb-10 shadow-inner shadow-blue-500">
+                <h2 class="mb-8 mt-10 md:text-5xl text-3xl text-center alt-text-color font-extrabold">
                     Mobile App Development with Flutter</h2>
                 <img src="./assets/images/courses_page_images/flutter_logo.jpg" alt="Java"
                     class="rounded-md mb-5 lg:mb-10 lg:w-3/6 md:w-2/3">
-                <p
-                    class="text-md md:text-lg lg:text-xl text-gray-700 lg:text-left px-1 md:px-8 lg:px-20 paragraph-text-shadow">
+                <p class="text-md md:text-lg lg:text-xl primary-text-color lg:text-left px-1 md:px-8 lg:px-20">
                     Java is a
                     high-level,
                     class-based,
@@ -170,21 +166,20 @@
                     is the default JVM for almost all Linux distributions.</p>
                 <div class="btn-wrapper flex flex-row mt-5">
                     <a href="#"
-                        class="bg-blue-400 p-2 rounded-md m-2 md:mr-10 hover:bg-blue-600 active:bg-blue-900 active:text-white cursor-pointer shadow-md shadow-blue-600 font-bold">Enroll
+                        class="btn-color-1 p-2 rounded-md m-2 md:ml-10 cursor-pointer shadow-md secondary-text-color font-bold">Enroll
                         Now</a>
                     <a href="#"
-                        class="bg-blue-400 p-2 rounded-md m-2 md:ml-10 hover:bg-blue-600 active:bg-blue-900 active:text-white cursor-pointer shadow-md shadow-blue-600 font-bold">Learn
+                        class="btn-color-1 p-2 rounded-md m-2 md:ml-10 cursor-pointer shadow-md secondary-text-color font-bold">Learn
                         More</a>
                 </div>
             </section>
-            <section id="ml" class="text-center p-5 envelope flex flex-col items-center shadow-inner shadow-blue-500">
-                <h2
-                    class="text-2xl md:text-3xl mb-8 lg:mb-11 bg-pink-50 alt-txt-color-4 shadow-md shadow-blue-500 heading-text-shadow p-3 rounded-md">
+            <section id="ml"
+                class="text-center p-5 bg-color-1 flex flex-col items-center pb-10 shadow-inner shadow-blue-500">
+                <h2 class="mb-8 mt-10 md:text-5xl text-3xl text-center alt-text-color font-extrabold">
                     Machine Learning with Python</h2>
                 <img src="./assets/images/courses_page_images/python_logo.jpg" alt="Python"
                     class="rounded-md mb-5 lg:mb-10 lg:w-3/6 md:w-2/3">
-                <p
-                    class="text-md md:text-lg lg:text-xl text-gray-700 lg:text-left px-1 md:px-8 lg:px-20 paragraph-text-shadow">
+                <p class="text-md md:text-lg lg:text-xl primary-text-color lg:text-left px-1 md:px-8 lg:px-20">
                     Machine
                     learning (ML) is the study of computer algorithms that can improve automatically through experience
                     and by the use of data.[1] It is seen as a part of artificial intelligence. Machine learning
@@ -203,22 +198,21 @@
                     problems, machine learning is also referred to as predictive analytics.</p>
                 <div class="btn-wrapper flex flex-row mt-5">
                     <a href="#"
-                        class="bg-blue-400 p-2 rounded-md m-2 md:mr-10 hover:bg-blue-600 active:bg-blue-900 active:text-white cursor-pointer shadow-md shadow-blue-600 font-bold">Enroll
+                        class="btn-color-1 p-2 rounded-md m-2 md:ml-10 cursor-pointer shadow-md secondary-text-color font-bold">Enroll
                         Now</a>
                     <a href="#"
-                        class="bg-blue-400 p-2 rounded-md m-2 md:ml-10 hover:bg-blue-600 active:bg-blue-900 active:text-white cursor-pointer shadow-md shadow-blue-600 font-bold">Learn
+                        class="btn-color-1 p-2 rounded-md m-2 md:ml-10 cursor-pointer shadow-md secondary-text-color font-bold">Learn
                         More</a>
                 </div>
             </section>
-            <section id="iot" class="text-center p-5 envelope flex flex-col items-center shadow-inner shadow-blue-500">
-                <h2
-                    class="text-2xl md:text-3xl mb-8 lg:mb-11 alt-txt-color-4 bg-pink-50 shadow-md shadow-blue-500 p-3 rounded-md">
+            <section id="iot"
+                class="text-center p-5 bg-color-1 flex flex-col items-center pb-10 shadow-inner shadow-blue-500">
+                <h2 class="mb-8 mt-10 md:text-5xl text-3xl text-center alt-text-color font-extrabold">
                     IoT
                     for Beginners</h2>
                 <img src="./assets/images/courses_page_images/iot_basics.jpg" alt="IoT"
                     class="rounded-md mb-5 lg:mb-10 lg:w-3/6 md:w-2/3">
-                <p
-                    class="text-md md:text-lg lg:text-xl text-gray-700 lg:text-left px-1 md:px-8 lg:px-20 paragraph-text-shadow">
+                <p class="text-md md:text-lg lg:text-xl primary-text-color lg:text-left px-1 md:px-8 lg:px-20">
                     The Internet
                     of things (IoT) describes physical objects (or groups of such objects) that are embedded with
                     sensors, processing ability, software, and other technologies that connect and exchange data with
@@ -240,22 +234,20 @@
                     standards, guidelines, and regulatory frameworks.[6]</p>
                 <div class="btn-wrapper flex flex-row mt-5">
                     <a href="#"
-                        class="bg-blue-400 p-2 rounded-md m-2 md:mr-10 hover:bg-blue-600 active:bg-blue-900 active:text-white cursor-pointer shadow-md shadow-blue-600 font-bold">Enroll
+                        class="btn-color-1 p-2 rounded-md m-2 md:ml-10 cursor-pointer shadow-md secondary-text-color font-bold">Enroll
                         Now</a>
                     <a href="#"
-                        class="bg-blue-400 p-2 rounded-md m-2 md:ml-10 hover:bg-blue-600 active:bg-blue-900 active:text-white cursor-pointer shadow-md shadow-blue-600 font-bold">Learn
+                        class="btn-color-1 p-2 rounded-md m-2 md:ml-10 cursor-pointer shadow-md secondary-text-color font-bold">Learn
                         More</a>
                 </div>
             </section>
             <section id="iot-2"
-                class="text-center p-5 envelope flex flex-col items-center shadow-inner shadow-blue-500">
-                <h2
-                    class="text-2xl md:text-3xl mb-8 lg:mb-11 alt-txt-color-4 p-3 rounded-md shadow-md shadow-blue-500 bg-pink-50">
+                class="text-center p-5 bg-color-1 flex flex-col items-center pb-10 shadow-inner shadow-blue-500">
+                <h2 class="mb-8 mt-10 md:text-5xl text-3xl text-center alt-text-color font-extrabold">
                     Advanced IoT</h2>
                 <img src="./assets/images/courses_page_images/iot_advanced.jpg" alt="IoT"
                     class="rounded-md mb-5 lg:mb-10 lg:w-3/6 md:w-2/3">
-                <p
-                    class="text-md md:text-lg lg:text-xl text-gray-700 lg:text-left px-1 md:px-8 lg:px-20 paragraph-text-shadow">
+                <p class="text-md md:text-lg lg:text-xl primary-text-color lg:text-left px-1 md:px-8 lg:px-20">
                     The Internet
                     of things (IoT) describes physical objects (or groups of such objects) that are embedded with
                     sensors, processing ability, software, and other technologies that connect and exchange data with
@@ -277,88 +269,75 @@
                     standards, guidelines, and regulatory frameworks.[6]</p>
                 <div class="btn-wrapper flex flex-row mt-5">
                     <a href="#"
-                        class="bg-blue-400 p-2 rounded-md m-2 md:mr-10 hover:bg-blue-600 active:bg-blue-900 active:text-white cursor-pointer shadow-md shadow-blue-600 font-bold">Enroll
+                        class="btn-color-1 p-2 rounded-md m-2 md:ml-10 cursor-pointer shadow-md secondary-text-color font-bold">Enroll
                         Now</a>
                     <a href="#"
-                        class="bg-blue-400 p-2 rounded-md m-2 md:ml-10 hover:bg-blue-600 active:bg-blue-900 active:text-white cursor-pointer shadow-md shadow-blue-600 font-bold">Learn
+                        class="btn-color-1 p-2 rounded-md m-2 md:ml-10 cursor-pointer shadow-md secondary-text-color font-bold">Learn
                         More</a>
                 </div>
             </section>
         </main>
-        <footer class="text-center lg:text-left bg-black">
+        <footer class="text-center lg:text-left bg-color-1">
             <div class="lg:grid lg:grid-flow-col lg:grid-cols-3 p-5 lg:ml-16">
                 <div class="mb-10 text-white">
-                    <h4 class="text-yellow-300 text-sm lg:text-md heading-text-shadow">Useful Links</h4>
+                    <h4 class="alt-text-color-5 font-bold text-sm lg:text-md">Useful Links</h4>
                     <ul>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Setup your
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Setup your
                                 computer for mobile app
                                 development</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Setup your
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Setup your
                                 computer to code C family of
                                 languages</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Setup your
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Setup your
                                 computer for back-end
                                 engineering</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Setup your
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Setup your
                                 computer for web
                                 development</a>
                         </li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Setup your
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Setup your
                                 computer for IoT
                                 development</a>
                         </li>
                     </ul>
                 </div>
                 <div class="mb-10 text-white">
-                    <h4 class="text-yellow-300 text-sm lg:text-md heading-text-shadow">Our Services</h4>
+                    <h4 class="alt-text-color-5 font-bold text-sm lg:text-md">Our Services</h4>
                     <ul>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Software
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Software
                                 Development</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Careers</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Networking &
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Careers</a></li>
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Networking &
                                 Security</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Cloud
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Cloud
                                 Solutions</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Other
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Other
                                 Services</a></li>
                     </ul>
                 </div>
                 <div class="mb-10 text-white">
-                    <h4 class="text-yellow-300 text-sm lg:text-md heading-text-shadow">Contact Us</h4>
-                    <p class="text-pink-200 text-xs heading-text-shadow">TIAT ACADEMY</p>
-                    <address class="text-emerald-200 text-xs lg:text-sm paragraph-text-shadow">
+                    <h4 class="alt-text-color-5 font-bold text-sm lg:text-md">Contact Us</h4>
+                    <p class="alt-text-color-3 text-xs font-bold">TIAT ACADEMY</p>
+                    <address class="alt-text-color-4 text-xs lg:text-sm">
                         #139B, Lost Sky,<br>
                         San Jose, CA 95116<br>
                     </address>
                     <div>
-                        <a class="text-red-200 text-xs lg:text-sm paragraph-text-shadow"
-                            href="mailto:johndoe123@example.site"> <span
+                        <a class="alt-text-color-3 text-xs lg:text-sm" href="mailto:johndoe123@example.site"> <span
                                 class="fas fa-envelope text-xs lg:text-sm"></span>
                             info@tiat.lk</a><br>
-                        <a class="text-blue-500 text-xs lg:text-sm paragraph-text-shadow" href="#"> <span
-                                class="fab fa-facebook"></span>
+                        <a class="text-blue-500 text-xs lg:text-sm" href="#"> <span class="fab fa-facebook"></span>
                             Facebook.com/tiat_academy</a><br>
-                        <a class="text-sky-400 text-xs lg:text-sm paragraph-text-shadow" href="#"> <span
-                                class="fab fa-twitter"></span>
+                        <a class="text-sky-400 text-xs lg:text-sm" href="#"> <span class="fab fa-twitter"></span>
                             Twitter.com/tiat_academy</a>
                     </div>
                 </div>
             </div>
-            <p class="pb-2 text-center bg-black text-blue-500 text-xs lg:text-sm paragraph-text-shadow">Copyright &copy;
-                2022, TIAT Academy
-            </p>
-            <p class="pb-10 text-center bg-black text-gray-300 text-xs paragraph-text-shadow"><span
-                    class="fa fa-code text-green-400 text-xs mr-2">
+            <p class="pb-2 text-center bg-color-1 alt-text-color text-xs lg:text-sm">Copyright
+                &copy;
+                2022, TIAT Academy</p>
+            <p class="pb-10 text-center bg-color-1 alt-text-color-5 text-xs"><span
+                    class="fa fa-code alt-text-color-5 text-xs mr-2">
                 </span> by TIAT Web Development Team</p>
         </footer>
     </section>

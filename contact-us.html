@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./assets/images/logo/tiat_logo_100px.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -24,32 +25,31 @@
     <section>
         <header>
             <!-- Logo and header text -->
-            <a href="index.html" class="primary-bg-color flex p-2 md:justify-center main-header pattern-randomized">
+            <a href="index.html" class="bg-color-1 flex p-2 md:justify-center main-header">
                 <img class="mb-3 rounded-full animate__animated header-logo"
                     src="./assets/images/logo/tiat_logo_100px.png" alt="t.i.a.t home">
                 <h1
-                    class="ml-6 mt-10 text-xl md:text-5xl md:mt-7 text-white header-txt animate__animated heading-text-shadow">
+                    class="ml-6 mt-10 text-xl md:text-5xl md:mt-7 font-extrabold alt-text-color-4 header-txt animate__animated heading-text-shadow">
                     TIAT ACADEMY
                 </h1>
             </a>
-            <hr>
             <!-- Navigation -->
             <nav>
-                <div class="p-1 social-bar flex justify-around md:hidden">
+                <div class="p-1 social-bar flex justify-around md:hidden mx-0">
                     <a href="https://www.facebook.com" class="fab fa-facebook fa-2x text-blue-700 m-1"></a>
                     <a href="https://www.twitter.com" class="fa fa-twitter fa-2x text-blue-400 m-1"></a>
                     <a href="https://www.linkedin.com" class="fab fa-linkedin-in fa-2x text-blue-900 m-1"></a>
                     <a href="https://www.youtube.com" class="fab fa-youtube fa-2x text-red-600 m-1"></a>
-                    <button class="text-black hamburger primary-bg-color-shade-1 rounded ml-16 shadow">
+                    <button class="text-black hamburger bg-color-2 rounded ml-16 shadow">
                         <div class="burger-lines"></div>
                     </button>
                 </div>
                 <ul
-                    class="hidden animate__animated duration-1 secondary-bg-color-shade-1 invisible nav-links bg-tiat-linear-secondary uppercase md:flex justify-evenly md:h-16 relative">
+                    class="hidden animate__animated duration-1 text-gray-50 font-semibold mx-0 bg-color-2 invisible nav-links uppercase md:flex justify-evenly md:h-16 relative">
                     <li class="grid justify-center p-0 nav-btn animate__animated required rounded-sm">
-                        <a href="courses.html" class="md:p-4 text-lg active:text-pink-600 rounded">Courses</a>
+                        <a href="courses.html" class="md:p-4 text-lg rounded">Courses</a>
                         <div
-                            class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 primary-bg-color p-3">
+                            class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 alt-bg-color p-3">
                             <a href="courses.html#java" class="p-1 rounded-sm">Java</a>
                             <a href="courses.html#flutter" class="p-1 rounded-sm">Flutter</a>
                             <a href="courses.html#ml" class="p-1 rounded-sm">Python</a>
@@ -58,7 +58,7 @@
                         </div>
                     </li>
                     <li class="flex justify-center rounded-sm p-0 nav-btn animate__animated"><a href="forum.html"
-                            class="md:p-4 text-lg active:text-pink-600 rounded">TIAT
+                            class="md:p-4 text-lg rounded">TIAT
                             Forum</a>
                         <div
                             class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 ml-9 primary-bg-color p-3">
@@ -69,11 +69,11 @@
                         </div>
                     </li>
                     <li class="flex justify-center rounded-sm p-0 nav-btn animate__animated"><a href="about-us.html"
-                            class="active:primary-bg-color md:p-4 text-lg active:text-pink-600 rounded">About
+                            class="active:primary-bg-color md:p-4 text-lg rounded">About
                             Us</a>
                     </li>
                     <li class="flex justify-center p-0 rounded-sm nav-btn animate__animated"><a href="contact-us.html"
-                            class="md:p-4 text-lg active:text-pink-600 rounded">Contact
+                            class="md:p-4 text-lg rounded">Contact
                             Us</a>
                         <div
                             class="dropdown-content animate__animated animate__flipInX z-50 rounded-md hidden grid-flow-row absolute mt-14 mr-4 primary-bg-color p-3">
@@ -87,13 +87,14 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="bg-color-1">
             <section id="facebook px-10">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-blue-800 pt-10 heading-text-shadow"><span
-                        class="fab fa-facebook"></span> Facebook</h2>
-                <p class="text-md md:text-lg lg:text-xl text-center pb-10 paragraph-text-shadow">You can easily contact
+                <h2 class="text-2xl md:text-3xl lg:text-4xl text-center alt-text-color-2 pt-10">
+                    <span class="fab fa-facebook text-blue-800"></span> Facebook
+                </h2>
+                <p class="text-md md:text-lg lg:text-xl text-center pb-10 alt-text-color-2">You can easily contact
                     us on <a href="#" class="text-blue-800 hover:cursor-pointer">Facebook</a></p>
-                <p class="text-md md:text-lg lg:text-xl text-center pb-0 paragraph-text-shadow">
+                <p class="text-md md:text-lg lg:text-xl text-center pb-0 alt-text-color-2">
                     Our
                     Latest Facebook
                     Posts</p>
@@ -101,36 +102,32 @@
                     class="md:flex md:flex-col lg:flex-row md:justify-center py-0 px-1 md:px-5 md:items-center md:align-middle">
                     <iframe
                         src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fposts%2F10161175296006729&show_text=true&width=500"
-                        style="border:1px solid gray;overflow:hidden" scrolling="no" frameborder="0"
-                        allowfullscreen="true"
+                        scrolling="no" frameborder="0" allowfullscreen="true"
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                         class="fb-embed rounded-md md:mx-10 my-8 md:w-3/4"></iframe>
                     <iframe
                         src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fposts%2F10161064218376729&show_text=true&width=500"
-                        style="border:1px solid gray;overflow:hidden" scrolling="no" frameborder="0"
-                        allowfullscreen="true"
+                        scrolling="no" frameborder="0" allowfullscreen="true"
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                         class="fb-embed rounded-md md:mx-10 my-8 md:w-3/4"></iframe>
                     <iframe
                         src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fposts%2F10160746121201729&show_text=true&width=500"
-                        style="border:1px solid gray;overflow:hidden" scrolling="no" frameborder="0"
-                        allowfullscreen="true"
+                        scrolling="no" frameborder="0" allowfullscreen="true"
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                         class="fb-embed rounded-md md:mx-10 my-8 md:w-3/4"></iframe>
                     <iframe
                         src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fposts%2F10160657204661729&show_text=true&width=500"
-                        style="border:1px solid grey;overflow:hidden" scrolling="no" frameborder="0"
-                        allowfullscreen="true"
+                        scrolling="no" frameborder="0" allowfullscreen="true"
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                         class="fb-embed rounded-md md:mx-10 my-8 md:w-3/4"></iframe>
                 </div>
             </section>
             <section class="twitter" id="twitter">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl text-center text-sky-500 heading-text-shadow"> <span
-                        class="fab fa-twitter"></span> Twitter</h2>
-                <p class="text-md md:text-lg lg:text-xl text-center pb-10 paragraph-text-shadow">DM or Tweet to us on <a
+                <h2 class="text-2xl md:text-3xl lg:text-4xl text-center alt-text-color-2"> <span
+                        class="fab fa-twitter text-sky-500"></span> Twitter</h2>
+                <p class="text-md md:text-lg lg:text-xl text-center pb-10 alt-text-color-2">DM or Tweet to us on <a
                         href="#" class="text-sky-500 hover:cursor-pointer">Twitter</a></p>
-                <p class="text-md md:text-lg lg:text-xl text-center pb-0 paragraph-text-shadow">Our Latest Tweets</p>
+                <p class="text-md md:text-lg lg:text-xl text-center pb-0 alt-text-color-2">Our Latest Tweets</p>
                 <div class="md:flex md:flex-col lg:justify-center lg:py-1 px-2 pt-0">
                     <div class="self-center tweet-embed md:py-8 lg:py-3 lg:flex justify-center pt-0">
                         <blockquote class="twitter-tweet" data-height="400" data-theme="dark">
@@ -167,11 +164,11 @@
                 </div>
             </section>
             <section class="youtube" id="youtube">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl text-red-600 text-center heading-text-shadow"> <span
-                        class="fab fa-youtube"></span> YouTube</h2>
-                <p class="text-md md:text-lg lg:text-xl text-center pb-10 paragraph-text-shadow">Subscribe to our <a
+                <h2 class="text-2xl md:text-3xl lg:text-4xl alt-text-color-2 text-center"> <span
+                        class="fab fa-youtube text-red-600"></span> YouTube</h2>
+                <p class="text-md md:text-lg lg:text-xl text-center pb-10 alt-text-color-2">Subscribe to our <a
                         class="text-red-600 hover:cursor-pointer" href="#">YouTube</a> channel for free tutorials!</p>
-                <p class="text-md md:text-lg lg:text-xl text-center pb-0 paragraph-text-shadow">Our Latest Uploads</p>
+                <p class="text-md md:text-lg lg:text-xl text-center pb-0 alt-text-color-2">Our Latest Uploads</p>
                 <div class="flex flex-wrap flex-col justify-center items-center px-2">
                     <iframe class="my-5 rounded-md youtube-embed" src="https://www.youtube.com/embed/mxHoPYFsTuk"
                         title="YouTube video player" frameborder="0"
@@ -193,97 +190,84 @@
             </section>
             <section class="direct-contact md:px-12 md:grid md:grid-cols-3" id="direct">
                 <div class="my-5">
-                    <h2 class="text-xl md:text-2xl lg:text-3xl text-green-400 text-center heading-text-shadow"> <span
+                    <h2 class="text-xl md:text-2xl lg:text-3xl text-green-400 text-center"> <span
                             class="fab fa-whatsapp-square"></span> WhatsApp</h2>
-                    <p class="text-md text-center md:text-lg lg:text-xl paragraph-text-shadow">+94 77 155 3456</p>
+                    <p class="text-md text-center md:text-lg lg:text-xl alt-text-color-2">+94 77 155 3456</p>
                 </div>
                 <div class="my-5">
-                    <h2 class="text-xl md:text-2xl lg:text-3xl text-blue-500 text-center heading-text-shadow"> <span
+                    <h2 class="text-xl md:text-2xl lg:text-3xl text-blue-500 text-center"> <span
                             class="fas fa-phone-square-alt"></span> Call Us</h2>
-                    <p class="text-md text-center md:text-lg lg:text-xl paragraph-text-shadow">+94 37 222 2413</p>
+                    <p class="text-md text-center md:text-lg lg:text-xl alt-text-color-2">+94 37 222 2413</p>
                 </div>
-                <div class="my-5 flex justify-center flex-col">
-                    <h2 class="text-2xl md:text-3xl lg:text-4xl text-red-500 text-center heading-text-shadow"> <span
+                <div class="mt-5 flex justify-center flex-col">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl text-red-500 text-center"> <span
                             class="far fa-envelope"></span> Email Us</h2>
                     <a href="mailto:johndoe123@example.site"
-                        class="text-md text-center md:text-lg lg:text-xl paragraph-text-shadow">info@tiat.lk</a>
+                        class="text-md text-center md:text-lg lg:text-xl alt-text-color-2">info@tiat.lk</a>
                 </div>
             </section>
         </main>
-        <footer class="text-center lg:text-left bg-black">
+        <footer class="text-center lg:text-left bg-color-1">
             <div class="lg:grid lg:grid-flow-col lg:grid-cols-3 p-5 lg:ml-16">
                 <div class="mb-10 text-white">
-                    <h4 class="text-yellow-300 text-sm lg:text-md heading-text-shadow">Useful Links</h4>
+                    <h4 class="alt-text-color-5 font-bold text-sm lg:text-md">Useful Links</h4>
                     <ul>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Setup your
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Setup your
                                 computer for mobile app
                                 development</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Setup your
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Setup your
                                 computer to code C family of
                                 languages</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Setup your
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Setup your
                                 computer for back-end
                                 engineering</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Setup your
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Setup your
                                 computer for web
                                 development</a>
                         </li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Setup your
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Setup your
                                 computer for IoT
                                 development</a>
                         </li>
                     </ul>
                 </div>
                 <div class="mb-10 text-white">
-                    <h4 class="text-yellow-300 text-sm lg:text-md heading-text-shadow">Our Services</h4>
+                    <h4 class="alt-text-color-5 font-bold text-sm lg:text-md">Our Services</h4>
                     <ul>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Software
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Software
                                 Development</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Careers</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Networking &
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Careers</a></li>
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Networking &
                                 Security</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Cloud
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Cloud
                                 Solutions</a></li>
-                        <li><a class="text-xs lg:text-sm text-blue-300 active:text-purple-600 paragraph-text-shadow"
-                                href="#">Other
+                        <li><a class="text-xs lg:text-sm alt-link-text" href="#">Other
                                 Services</a></li>
                     </ul>
                 </div>
                 <div class="mb-10 text-white">
-                    <h4 class="text-yellow-300 text-sm lg:text-md heading-text-shadow">Contact Us</h4>
-                    <p class="text-pink-200 text-xs heading-text-shadow">TIAT ACADEMY</p>
-                    <address class="text-emerald-200 text-xs lg:text-sm paragraph-text-shadow">
+                    <h4 class="alt-text-color-5 font-bold text-sm lg:text-md">Contact Us</h4>
+                    <p class="alt-text-color-3 text-xs font-bold">TIAT ACADEMY</p>
+                    <address class="alt-text-color-4 text-xs lg:text-sm">
                         #139B, Lost Sky,<br>
                         San Jose, CA 95116<br>
                     </address>
                     <div>
-                        <a class="text-red-200 text-xs lg:text-sm paragraph-text-shadow"
-                            href="mailto:johndoe123@example.site"> <span
+                        <a class="alt-text-color-3 text-xs lg:text-sm" href="mailto:johndoe123@example.site"> <span
                                 class="fas fa-envelope text-xs lg:text-sm"></span>
                             info@tiat.lk</a><br>
-                        <a class="text-blue-500 text-xs lg:text-sm paragraph-text-shadow" href="#"> <span
-                                class="fab fa-facebook"></span>
+                        <a class="text-blue-500 text-xs lg:text-sm" href="#"> <span class="fab fa-facebook"></span>
                             Facebook.com/tiat_academy</a><br>
-                        <a class="text-sky-400 text-xs lg:text-sm paragraph-text-shadow" href="#"> <span
-                                class="fab fa-twitter"></span>
+                        <a class="text-sky-400 text-xs lg:text-sm" href="#"> <span class="fab fa-twitter"></span>
                             Twitter.com/tiat_academy</a>
                     </div>
                 </div>
             </div>
-            <p class="pb-2 text-center bg-black text-blue-500 text-xs lg:text-sm paragraph-text-shadow">Copyright &copy;
-                2022, TIAT Academy
-            </p>
-            <p class="pb-10 text-center bg-black text-gray-300 text-xs paragraph-text-shadow"><span
-                    class="fa fa-code text-green-400 text-xs mr-2">
+            <p class="pb-2 text-center bg-color-1 alt-text-color text-xs lg:text-sm">Copyright
+                &copy;
+                2022, TIAT Academy</p>
+            <p class="pb-10 text-center bg-color-1 alt-text-color-5 text-xs"><span
+                    class="fa fa-code alt-text-color-5 text-xs mr-2">
                 </span> by TIAT Web Development Team</p>
         </footer>
     </section>
